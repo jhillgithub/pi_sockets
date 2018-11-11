@@ -1,29 +1,27 @@
 # pi_sockets
 Testing Socket.io on the Raspberry Pi
 
+## Install
+
+```shell
+cd client
+npm install
+
+cd ../server
+npm install
+```
+
 ## Usage
 
 The express server is setup to use the build directory for create-react-app.
 
-To setup autobuild for react, use npm-watch.
+Run `npm run build` to update the client.
 
-[react autobuild instructions](https://stackoverflow.com/a/42773333)
-
-Here are the setup instructions. These are already in the package.json, but this is a reference to the setup process.
+To start the app:
 
 ```shell
-# Install the dev dependency
-npm i --save-dev npm-watch
-
-# add watch script to package.json
-"scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "watch": "npm-watch"
-  }
-
-# run the builder
-npm run watch
+cd server
+nodemon index.js
 ```
+
+visit [localhost:3000](http://localhost:3000) in the browser
