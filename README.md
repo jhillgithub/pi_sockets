@@ -21,7 +21,7 @@ To start the app:
 
 ```shell
 cd server
-nodemon index.js
+nodemon server.js
 ```
 
 visit [localhost:3000](http://localhost:3000) in the browser
