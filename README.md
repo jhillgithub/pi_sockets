@@ -4,10 +4,7 @@ Testing Socket.io on the Raspberry Pi
 ## Install
 
 ```shell
-cd client
-npm install
-
-cd ../server
+cd piapp
 npm install
 ```
 
